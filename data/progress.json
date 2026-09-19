@@ -5839,8 +5839,26 @@
    "priority": "Low"
   }
  ],
- "tests": [],
+ "tests": [
+  {
+   "id": 1789845559362,
+   "ts": 1789845559362,
+   "date": "2026-09-20",
+   "scope": "L1",
+   "label": "Level 1 — FMCG Foundation & Channel Knowledge",
+   "n": 10,
+   "scores": {
+    "sk": 82,
+    "tc": 68,
+    "ps": 72,
+    "ex": 84,
+    "ir": 86
+   },
+   "overall": 78,
+   "note": "Strong Level-1 foundation, but sharpen distributor economics and quantitative sales concepts before moving to Level 2."
+  }
+ ],
  "meta": {
-  "updated": 0
+  "updated": 1789845559366
  }
 }
