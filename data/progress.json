@@ -5,12 +5,12 @@
    "level": 1,
    "category": "FMCG Industry Fundamentals",
    "topic": "What FMCG means",
-   "status": "Not Started",
-   "confidence": "",
+   "status": "Studied",
+   "confidence": "High",
    "resource": "",
    "targetDate": "",
-   "completedDate": "",
-   "practiceDone": false,
+   "completedDate": "2026-09-20",
+   "practiceDone": true,
    "notes": "",
    "priority": "High"
   },
@@ -19,12 +19,12 @@
    "level": 1,
    "category": "FMCG Industry Fundamentals",
    "topic": "FMCG vs consumer durables vs retail vs CPG",
-   "status": "Not Started",
+   "status": "Studied",
    "confidence": "",
    "resource": "",
    "targetDate": "",
-   "completedDate": "",
-   "practiceDone": false,
+   "completedDate": "2026-09-20",
+   "practiceDone": true,
    "notes": "",
    "priority": "High"
   },
@@ -5859,6 +5859,6 @@
   }
  ],
  "meta": {
-  "updated": 1789845559366
+  "updated": 1789845612697
  }
 }
