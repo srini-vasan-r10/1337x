@@ -5,12 +5,12 @@
    "level": 1,
    "category": "FMCG Industry Fundamentals",
    "topic": "What FMCG means",
-   "status": "Studied",
-   "confidence": "High",
+   "status": "Not Started",
+   "confidence": "",
    "resource": "",
    "targetDate": "",
-   "completedDate": "2026-09-20",
-   "practiceDone": true,
+   "completedDate": "",
+   "practiceDone": false,
    "notes": "",
    "priority": "High"
   },
@@ -19,12 +19,12 @@
    "level": 1,
    "category": "FMCG Industry Fundamentals",
    "topic": "FMCG vs consumer durables vs retail vs CPG",
-   "status": "Studied",
+   "status": "Not Started",
    "confidence": "",
    "resource": "",
    "targetDate": "",
-   "completedDate": "2026-09-20",
-   "practiceDone": true,
+   "completedDate": "",
+   "practiceDone": false,
    "notes": "",
    "priority": "High"
   },
@@ -5839,26 +5839,8 @@
    "priority": "Low"
   }
  ],
- "tests": [
-  {
-   "id": 1789845559362,
-   "ts": 1789845559362,
-   "date": "2026-09-20",
-   "scope": "L1",
-   "label": "Level 1 — FMCG Foundation & Channel Knowledge",
-   "n": 10,
-   "scores": {
-    "sk": 82,
-    "tc": 68,
-    "ps": 72,
-    "ex": 84,
-    "ir": 86
-   },
-   "overall": 78,
-   "note": "Strong Level-1 foundation, but sharpen distributor economics and quantitative sales concepts before moving to Level 2."
-  }
- ],
+ "tests": [],
  "meta": {
-  "updated": 1789845612697
+  "updated": 1789845625311
  }
 }
