@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#6750A4">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="FMCG Prep">
 <title>FMCG Prep Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400..900&display=swap" rel="stylesheet">
 <style>
@@ -306,6 +312,10 @@ hr{border:0;border-top:1px solid var(--line);margin:16px 0;opacity:.6}
    <div class="opts"><button class="btn" id="ghSave">Save &amp; sync now</button><span class="sub" id="ghMsg"></span></div>
   </div>
  </div>
+<div class="card mt"><h2>Install on your phone</h2>
+ <p class="sub">Open this page from its <b>https://</b> link (GitHub Pages) in Chrome on Android, then tap the button below — or Chrome menu ⋮ → <b>Install app</b> / <b>Add to Home screen</b>. It opens full-screen like a normal app and works offline.</p>
+ <div class="opts"><button class="btn" id="installBtn" style="display:none">📲 Install app</button><span class="sub" id="installMsg"></span></div>
+</div>
 </section>
 </main>
 </div>
@@ -737,6 +747,14 @@ load();applyTheme();
 buildFilters();
 const h=(location.hash||'#dash').slice(1);go(['dash','topics','lab','settings'].includes(h)?h:'dash');
 if(ghReady())syncNow(true);
+
+/* ---------- install as app (PWA) ---------- */
+let deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('installBtn').style.display=''});
+$('installBtn').onclick=async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$('installBtn').style.display='none'};
+window.addEventListener('appinstalled',()=>{toast('App installed ✓');$('installBtn').style.display='none'});
+if(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)$('installMsg').textContent='You are already using the installed app ✓';
+if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0)navigator.serviceWorker.register('sw.js').catch(()=>{});
 
 </script>
 </body>
