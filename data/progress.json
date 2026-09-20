@@ -5839,26 +5839,8 @@
    "priority": "Low"
   }
  ],
- "tests": [
-  {
-   "id": 1789876842391,
-   "ts": 1789876842391,
-   "date": "2026-09-20",
-   "scope": "all",
-   "label": "Overall (all 5 levels)",
-   "n": 10,
-   "scores": {
-    "sk": 72,
-    "tc": 54,
-    "ps": 76,
-    "ex": 87,
-    "ir": 23
-   },
-   "overall": 62,
-   "note": "test test to test the sync"
-  }
- ],
+ "tests": [],
  "meta": {
-  "updated": 1789876842391
+  "updated": 1789876869732
  }
 }
